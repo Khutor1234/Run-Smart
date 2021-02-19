@@ -1,0 +1,44 @@
+@media (max-width: 1200px){
+}
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+
+}
+
+@media (max-width: 575px){
+    .header{
+        flex-direction: column;
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__official{
+            margin-top: 20px;
+            order: 1;
+        }
+    }
+    .promo{
+        min-height: 450px;
+        padding: 15px 0 15px 0;
+        &__wrapper{
+            margin-top: 20px;
+            align-items: center;
+        }
+        &__header{
+            font-size: 22px;
+        }
+        &__subheader{
+            display: none;
+        }
+        &__icons{
+            margin-top: 25px;
+            width: 300px;
+        }
+        &__icon{
+            width: 80px;
+        }
+    }
+}

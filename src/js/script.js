@@ -26,7 +26,17 @@ $(document).ready(function(){
       };
 
       toggleSlide('.catalog-item__link');
-      toggleSlide('.catalog-item_back')
+      toggleSlide('.catalog-item_back');
 
+      //modal
+      $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn();
+      });
+      $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut();
+      });
+      $('.button_mini').on('click', function(){
+        $('.overlay, #order').fadeIn();
+      })
 
   });
